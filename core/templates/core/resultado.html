@@ -1,0 +1,87 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{% static 'core/css/normalize.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/resultado.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:700" rel="stylesheet">
+    <title>MyToeic</title>
+</head>
+
+<body>
+    <header class="header container">
+
+        <img class="logo" src="{% static 'core/imagenes/ProgramEnglish.png' %}" alt=""> <!-- LOGO PRONCIPAL-->
+
+        <div class="resultado">
+            <div class="rut">
+                <p>{{ alumno.rut }}</p>
+            </div>
+
+            <!--BOX DEL RUT-->
+
+            <h2>RESULTS</h2>
+            <!--TITULO RESULTADOS-->
+
+            <div class="resultados">
+
+                <div class="alumno">
+                    <p>Student</p>
+                    <!--PARRAFO QUE HACE REFERENCIA AL ALUMNO-->
+                    <p class="alum">{{ alumno.nombre }}</p>
+                    <!--BOX DEL ALUMNO-->
+                </div>
+
+                <div class="prueba">
+                    <p>Test</p>
+                    <!--PARRAFO QUE HACE REFERENCIA DEL RUT-->
+                    <p class="prue">{{ alumno.prueba.tipo_prueba }}</p>
+
+                    <!--BOX DEL RUT-->
+                </div>
+
+                <div class="sala">
+                    <P>Room</P>
+                    <!--PARRAFO QUE HACE REFERENCIA A LA SALA-->
+                    <p class="sal">{{ alumno.prueba.sala }}</p>
+                    <!--BOX DE LA SALA-->
+                </div>
+
+                <div class="fecha">
+                    <P>Date</P>
+                    <!--PARRAFO QUE HACE REFERENCIA A LA FECHA-->
+                    <p class="fech">{{ alumno.prueba.fecha_prueba|date:"D d M Y" }}</p>
+                    <!--BOX DE LA FECHA-->
+                </div>
+
+                <div class="hora">
+                    <P>Hour</P>
+                    <!--PARRAFO QUE HACE REFERENCIA A LA FECHA-->
+                    <p class="hor">{{ alumno.prueba.hora_inicio|time:"H:i" }} - {{ alumno.prueba.hora_fin|time:"H:i" }}</p>
+                    <!--BOX DE LA FECHA-->
+                </div>
+
+                <div class="profesor">
+                    <P>Teacher</P>
+                    <!--PARRAFO QUE HACE REFERENCIA A LA FECHA-->
+                    <p class="profe">{{ alumno.prueba.docente }}</p>
+                    <!--BOX DE LA FECHA-->
+                </div>
+            </div>
+
+            <a class="botonComo" href="como.html">How to get</a>
+            <!--BOTON DE CÓMO LLEGAR-->
+
+        </div>
+
+        <a class="boton1" href="{% url 'principal' %}">BACK</a>
+        <!--BOTON DE ATTRAS-->
+
+    </header>
+</body>
+
+</html>

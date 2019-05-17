@@ -1,0 +1,190 @@
+body{
+    background-color: #F9F9F9;
+}
+
+.header{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items:center;
+    justify-content: space-between;
+}
+
+.header .logo{
+    width: 278px;
+    height: 103px;  
+    padding-top: 50px;
+ 
+}
+
+.ingreso{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items:center;
+    justify-content: space-between;
+}
+
+.ingreso h1{
+     font-size: 32px;
+     color: #272658;
+     font-family: myriad-pro, sans-serif;
+     font-style: normal;
+     font-weight: 700;
+     margin-top: -150px; 
+ }
+
+ .ingreso h2{
+      font-size: 14px;
+     color: #272658e5;
+     font-family: myriad-pro, sans-serif;
+     font-style: normal;
+     font-weight: 700;
+    margin-left: -185px;
+ }
+
+ .ingreso .rut{
+    width: 280px;
+    height: 40px;
+    font-size: 18px;
+    border: 1px solid  #272658;
+    font-family: myriad-pro, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    margin-top: -5px; 
+    background: #FFFFFF;
+    box-shadow: 0px 4px 8px rgba(6, 72, 0, 0.12);
+    border-radius: 8px;
+    border: none !important;
+    padding: 0px 10px;
+ }
+ .ingreso .rut:hover{
+    outline: none;
+}
+
+.boton1{
+    background-color: #1578DB;
+    color:white;
+    width: 220px;
+    border: #1578DB;
+    border-radius: 8px;
+    font-size: 18px;
+    font-family: myriad-pro, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    padding: 10px 0px;
+    margin-top: 35px;
+    -webkit-box-shadow: 1px 10px 26px 2px rgba(0,0,0,0.06);
+    -moz-box-shadow: 1px 10px 26px 2px rgba(0,0,0,0.06);
+    box-shadow: 1px 10px 26px 2px rgba(0,0,0,0.06);
+    text-decoration: none;
+    text-align: center;
+}
+
+.duoccitt{
+    width: 350PX;
+    padding: 27px;
+}
+
+  
+
+  @media screen and (max-width:320px) {/*IPHONE 5*/
+
+    .header .logo{
+        width: 200px;
+        height: 70px;
+        margin-top: -20px;  
+       
+    }
+
+    .ingreso h1{
+        font-size: 26px;
+        color: #272658;
+        margin-top: -100px; 
+    }
+
+    .ingreso h2{
+        font-size: 14px;
+       color: #272658e5;
+       font-family: myriad-pro, sans-serif;
+       font-style: normal;
+       font-weight: 700;
+      margin-left: -150px;
+    
+   }
+    .ingreso .rut{
+        width: 240px;
+        height: 40px;
+        font-size: 18px;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 8px rgba(6, 72, 0, 0.12);
+        border-radius: 8px;
+        border: none !important;
+        padding: 0px 10px;
+        
+     }
+
+     .ingreso .rut:hover{
+         outline: none;
+     }
+
+     .boton1{
+        width: 180px;
+        font-size: 16px;
+        padding: 10px 0px;
+        margin-top: 35px;
+    }
+  
+
+  }
+
+  @media screen and (max-width:375px) {/*IPHINE 6,7,8*/
+
+    .duoccitt{
+        width: 80%;
+        padding: 27px;
+    }
+  }
+
+  @media screen and (max-width:414px) { /*IPHONE 6,7,8 PLUS*/
+
+    .duoccitt{
+        width: 80%;
+        padding: 27px;
+    }
+  }
+
+  @media screen and (max-width:768px) { /*IPHONE 6,7,8 PLUS -----*/
+
+    .header .logo{
+        width: 400px;
+        height: 140px;  
+        padding-top: 50px;
+     
+    }
+    .ingreso h1{
+        font-size: 45px;
+        margin-top: -200px; 
+    }
+
+    .ingreso h2{
+        font-size: 22px;
+      margin-left: -200px;
+    
+   }
+    .ingreso .rut{
+        width: 350px;
+        height: 60px;
+        font-size: 25px;
+     }
+     .boton1{
+        width: 280px;
+        font-size: 25px;
+    }
+ 
+    .duoccitt{
+        width: 80%;
+        padding: 27px;
+    }
+  }

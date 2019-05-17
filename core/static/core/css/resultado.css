@@ -1,0 +1,430 @@
+
+
+body{
+    background-color: #F9F9F9;
+}
+
+.header{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items:center;
+    justify-content: space-between;
+}
+
+.header .logo{ /*TAMAÑO DEL LOGO LINEA 17*/
+    width: 260px;
+    height: 90px;  
+    margin-top: 60px;
+}
+
+.resultado h2{ /*PROPIEDADERS DEL TEXTO RESULTADO LINEA 24*/
+    font-size: 25px;
+    color: #272658;
+    font-family: myriad-pro, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    text-align: center;
+}
+
+.resultado .rut{ /*RESULTADO DE LA FILTRACION POR RUT LINEA 22*/
+    height: 20px;
+    width: 300px;
+    padding: 10px;
+    font-size: 18px;
+    color: #272658;
+    font-family: myriad-pro, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    margin-top: 10px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 8px rgba(6, 72, 0, 0.12);
+    border-radius: 8px;
+    border: none !important;
+    margin: auto;
+ }
+
+ .rut p{
+    margin: auto;
+     display: block;
+
+ }
+
+ .resultados p{ /*PROPIEDADES DE TODOS LOS P DE RESULTADOS LINEA 27 A */
+    width: 70px;
+    color: #272658;
+    border: 1px solid #272658;
+    padding: 10px 5px;
+    text-align: center;
+    font-family: myriad-pro, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    margin: 7px 0 !important;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 8px rgba(6, 72, 0, 0.12);
+    border-radius: 8px 0px 0px 8px;
+    border: none !important;
+}
+
+/*         PROPIEDADES DE LOS DIV QUE ENCAPSULAN LOS IMPUT DE RESULTADOS                       */
+
+.alumno{ /*PROPIEDADES DEL DIV ALUMNOS LINEA 29*/
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.prueba{ /*PROPIEDADES DEL DIV ALUMNOS LINEA 37*/
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sala{ /*PROPIEDADES DEL DIV SALA LINEA 45*/
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fecha{ /*PROPIEDADES DEL DIV FECHA LINEA 53*/
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hora{ /*PROPIEDADES DEL DIV FECHA LINEA 61*/
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profesor{ /*PROPIEDADES DEL DIV PROFESOR LINEA 69*/
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+
+/*         PROPIEDADES DE LOS INPUT DE RESULTADOS                       */
+
+
+.resultado .alum{ /*RESULTADOS DE LA FILTRACION NOMBRE DEL ALUMNO LINEA 33*/
+    height: 18px;
+    width: 240px;
+    color: #272658;
+    border: 1px solid #272658;
+    font-family: myriad-pro, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 8px rgba(6, 72, 0, 0.12);
+    border-radius: 0px 8px 8px 0px;
+    border: none !important;
+}
+
+.resultado .prue{ /*RESULTADOS DE LA FILTRACION TIPO DE PRUEBA DEL ALUMNO LINEA 41*/
+    height: 18px;
+    width: 240px;
+    color: #272658;
+    border: 1px solid #272658;
+    font-family: myriad-pro, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 8px rgba(6, 72, 0, 0.12);
+    border-radius: 0px 8px 8px 0px;
+    border: none !important;
+}
+
+.resultado .sal{ /*RESULTADOS DE LA SALA DONDE DARA LA PRUEBA LINEA 49*/
+    height: 18px;
+    width: 240px;
+    color: #272658;
+    border: 1px solid #272658;
+    font-family: myriad-pro, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 8px rgba(6, 72, 0, 0.12);
+    border-radius: 0px 8px 8px 0px;
+    border: none !important;
+}
+
+.resultado .fech{ /*RESULTADOS DE LA FECHA DE LA PRUEBA LINEA 57*/
+    height: 18px;
+    width: 240px;
+    color: #272658;
+    border: 1px solid #272658;
+    font-family: myriad-pro, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 8px rgba(6, 72, 0, 0.12);
+    border-radius: 0px 8px 8px 0px;
+    border: none !important;
+}
+
+.resultado .hor{ /*RESULTADOS DE LA HORA DE LA PRUEBA LINEA 65*/
+    height: 18px;
+    width: 240px;
+    color: #272658;
+    border: 1px solid #272658;
+    font-family: myriad-pro, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 8px rgba(6, 72, 0, 0.12);
+    border-radius: 0px 8px 8px 0px;
+    border: none !important;
+}
+
+.resultado .profe{ /*RESULTADOS DEL PROFESOR QUE DARA LA PRUEBA LINEA 73*/
+    height: 18px;
+    width: 240px;
+    color: #272658;
+    border: 1px solid #272658;
+    font-family: myriad-pro, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 8px rgba(6, 72, 0, 0.12);
+    border-radius: 0px 8px 8px 0px;
+    border: none !important;
+}
+
+/*BOTON DE COMO LLEGAR A LA SALA LINEA 78*/
+
+.botonComo{
+    background-color: #FF004C;
+    color:white;
+    border: #FF004C;
+    border-radius: 50PX;
+    font-size: 20px;
+    font-family: myriad-pro, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    padding: 12px 0px;
+    -webkit-box-shadow: 1px 10px 26px 2px rgba(0,0,0,0.06);
+    -moz-box-shadow: 1px 10px 26px 2px rgba(0,0,0,0.06);
+    box-shadow: 1px 10px 26px 2px rgba(0,0,0,0.06);
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12px;
+    
+}
+
+/*BOTON DE VOLVER ATRASLINEA 78*/
+
+.boton1{
+    background-color: #1578DB;
+    color:white;
+    width: 241px;
+    border: #1578DB;
+    border-radius: 50PX;
+    font-size: 20px;
+    font-family: myriad-pro, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    padding: 12px 0px;
+    -webkit-box-shadow: 1px 10px 26px 2px rgba(0,0,0,0.06);
+    -moz-box-shadow: 1px 10px 26px 2px rgba(0,0,0,0.06);
+    box-shadow: 1px 10px 26px 2px rgba(0,0,0,0.06);
+    text-decoration: none;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+@media screen and (max-width:414px) {  /*IPHONE 6,7,8 PLUS*/
+
+
+    .header .logo{
+        width: 220px;
+        height: 80px;
+        margin-top: 20px;  
+       
+    }
+
+    .resultado .rut{ /*RESULTADO DE LA FILTRACION POR RUT LINEA 22*/
+        height: 20px;
+        width: 220px;
+        padding: 10px;
+        font-size: 22px;
+        margin-top: -20px;
+        text-align: center;
+        
+     }
+     .resultado h2{ /*PROPIEDADERS DEL TEXTO RESULTADO LINEA 24*/
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .botonComo{
+        margin: auto;
+        width: 260px;
+        height: 15px;
+        font-size: 18px;
+        margin-top: 10px;
+        
+    }
+    .boton1{
+        color:white;
+        width: 200px;
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+  }
+
+
+
+@media screen and (max-width:375px) {/*IPHONE 6,7,8*/
+
+    .header .logo{
+        width: 200px;
+        height: 70px;
+        margin-top: 20px;  
+       
+    }
+
+    .resultado .rut{ /*RESULTADO DE LA FILTRACION POR RUT LINEA 22*/
+        height: 20px;
+        width: 220px;
+        padding: 10px;
+        font-size: 22px;
+        text-align: center;
+        
+     }
+     .resultado h2{ /*PROPIEDADERS DEL TEXTO RESULTADO LINEA 24*/
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .botonComo{
+        margin: auto;
+        width: 260px;
+        height: 15px;
+        font-size: 18px;
+        margin-top: 10px;
+        
+    }
+    .boton1{
+        color:white;
+        width: 200px;
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width:320px) {/*IPHONE 6,7,8*/
+
+    .header .logo{
+        width: 170px;
+        height: 60px;
+        margin-top: 10px;  
+       
+    }
+
+    .resultado .rut{ /*RESULTADO DE LA FILTRACION POR RUT LINEA 22*/
+        height: 18px;
+        width: 200px;
+        padding: 10px;
+        font-size: 18px;
+        text-align: center;
+        margin-top: 15PX;
+     }
+     .resultado h2{ /*PROPIEDADERS DEL TEXTO RESULTADO LINEA 24*/
+        font-size: 18px;
+        text-align: center;
+        margin-top: 7px;
+    }
+
+    .resultados p{ /*PROPIEDADES DE TODOS LOS P DE RESULTADOS LINEA 27 A */
+        width: 70px;
+        padding: 10px 5px;
+        margin: 7px 0 !important;
+      font-size: 14px;
+    }
+
+.alumno{
+    margin-top: -5px;
+}
+
+/*         PROPIEDADES DE LOS INPUT DE RESULTADOS                       */
+
+
+.resultado .alum{ /*RESULTADOS DE LA FILTRACION NOMBRE DEL ALUMNO LINEA 33*/
+    height: 16px;
+    width: 240px;
+}
+
+.resultado .prue{ /*RESULTADOS DE LA FILTRACION TIPO DE PRUEBA DEL ALUMNO LINEA 41*/
+    height: 16px;
+    width: 240px;
+  
+}
+
+.resultado .sal{ /*RESULTADOS DE LA SALA DONDE DARA LA PRUEBA LINEA 49*/
+    height: 16px;
+    width: 240px;
+ 
+}
+
+.resultado .fech{ /*RESULTADOS DE LA FECHA DE LA PRUEBA LINEA 57*/
+    height: 16px;
+    width: 240px;
+ 
+}
+
+.resultado .hor{ /*RESULTADOS DE LA HORA DE LA PRUEBA LINEA 65*/
+    height: 16px;
+    width: 240px;
+
+}
+
+.resultado .profe{ /*RESULTADOS DEL PROFESOR QUE DARA LA PRUEBA LINEA 73*/
+    height: 16px;
+    width: 240px;
+
+}
+
+    .botonComo{
+        margin: auto;
+        width: 180px;
+        height: 10px;
+        font-size: 14px;
+        margin-top: 5px;
+        
+    }
+    .boton1{
+        color:white;
+        width: 200px;
+        height: 10;
+        font-size: 18px;
+        margin-bottom: 11px;
+    }
+
+}
+
+
